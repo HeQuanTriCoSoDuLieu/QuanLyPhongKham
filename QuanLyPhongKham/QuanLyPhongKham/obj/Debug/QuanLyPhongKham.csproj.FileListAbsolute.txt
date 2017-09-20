@@ -1,0 +1,13 @@
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe.config
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.exe
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csprojResolveAssemblyReference.cache
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.GenerateResource.Cache
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CoreCompileInputs.cache
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\MetroFramework.Design.dll
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\MetroFramework.dll
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\MetroFramework.Fonts.dll
+D:\GIT\HUB\Project\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.fLogin.resources
