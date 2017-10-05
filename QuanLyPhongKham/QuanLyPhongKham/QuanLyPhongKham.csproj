@@ -55,17 +55,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\fLogin.Designer.cs">
       <DependentUpon>fLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\fTiepNhanBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fTiepNhanBenhNhan.Designer.cs">
+      <DependentUpon>fTiepNhanBenhNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\fTiepNhanBenhNhan.resx">
+      <DependentUpon>fTiepNhanBenhNhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,7 +103,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BUS\" />
     <Folder Include="DTO\" />
   </ItemGroup>
   <ItemGroup>

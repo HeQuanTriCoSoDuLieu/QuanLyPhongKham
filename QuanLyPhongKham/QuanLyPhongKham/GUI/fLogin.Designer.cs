@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.ckbRememberMe = new MetroFramework.Controls.MetroCheckBox();
+            this.chkRememberMe = new MetroFramework.Controls.MetroCheckBox();
             this.txbPassWord = new MetroFramework.Controls.MetroTextBox();
             this.txbUserName = new MetroFramework.Controls.MetroTextBox();
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
@@ -54,7 +54,7 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.btnLogin);
-            this.panel1.Controls.Add(this.ckbRememberMe);
+            this.panel1.Controls.Add(this.chkRememberMe);
             this.panel1.Controls.Add(this.txbPassWord);
             this.panel1.Controls.Add(this.txbUserName);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -75,15 +75,15 @@
             this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // ckbRememberMe
+            // chkRememberMe
             // 
-            this.ckbRememberMe.AutoSize = true;
-            this.ckbRememberMe.Location = new System.Drawing.Point(0, 103);
-            this.ckbRememberMe.Name = "ckbRememberMe";
-            this.ckbRememberMe.Size = new System.Drawing.Size(130, 15);
-            this.ckbRememberMe.TabIndex = 2;
-            this.ckbRememberMe.Text = "Ghi nhớ đăng nhập?";
-            this.ckbRememberMe.UseSelectable = true;
+            this.chkRememberMe.AutoSize = true;
+            this.chkRememberMe.Location = new System.Drawing.Point(0, 103);
+            this.chkRememberMe.Name = "chkRememberMe";
+            this.chkRememberMe.Size = new System.Drawing.Size(130, 15);
+            this.chkRememberMe.TabIndex = 2;
+            this.chkRememberMe.Text = "Ghi nhớ đăng nhập?";
+            this.chkRememberMe.UseSelectable = true;
             // 
             // txbPassWord
             // 
@@ -185,7 +185,7 @@
         private System.Windows.Forms.Panel panel1;
         private MetroFramework.Controls.MetroTextBox txbPassWord;
         private MetroFramework.Controls.MetroTextBox txbUserName;
-        private MetroFramework.Controls.MetroCheckBox ckbRememberMe;
+        private MetroFramework.Controls.MetroCheckBox chkRememberMe;
         private System.Windows.Forms.Button btnLogin;
         private MetroFramework.Components.MetroStyleManager metroStyleManager1;
     }
