@@ -29,7 +29,7 @@ namespace QuanLyPhongKham.GUI
             #region Style cho form
             this.StyleManager = metroStyleManager1;
             metroStyleManager1.Theme = MetroFramework.MetroThemeStyle.Light;
-            metroStyleManager1.Style = MetroFramework.MetroColorStyle.Blue; 
+            metroStyleManager1.Style = MetroFramework.MetroColorStyle.Blue;
             #endregion
 
             if (Settings.Default.RememberMe)
@@ -40,7 +40,7 @@ namespace QuanLyPhongKham.GUI
             }
             txbUserName.Focus();
 
-                     
+
 
         }
 
@@ -54,7 +54,7 @@ namespace QuanLyPhongKham.GUI
         {
             string username = txbUserName.Text.Trim();
             string password = txbPassWord.Text.Trim();
-            bool result = TaiKhoanBUS.Instane.Login(username,password);
+            bool result = TaiKhoanBUS.Instane.Login(username, password);
             if (result)
             {
                 if (chkRememberMe.Checked)
@@ -71,8 +71,10 @@ namespace QuanLyPhongKham.GUI
                 }
 
                 Settings.Default.Save();
-                MessageBox.Show("Thành công");
-
+                Hide();
+                fTiepNhanBenhNhan f = new fTiepNhanBenhNhan();
+                f.ShowDialog();
+                Show();
             }
             else
             {

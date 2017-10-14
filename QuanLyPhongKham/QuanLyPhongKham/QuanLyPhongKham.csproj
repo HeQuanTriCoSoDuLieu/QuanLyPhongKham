@@ -58,6 +58,12 @@
     <Compile Include="BUS\TaiKhoanBUS.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\TaiKhoanDAO.cs" />
+    <Compile Include="GUI\fKhamBenh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\fKhamBenh.Designer.cs">
+      <DependentUpon>fKhamBenh.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\fLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\fKhamBenh.resx">
+      <DependentUpon>fKhamBenh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\fLogin.resx">
       <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>

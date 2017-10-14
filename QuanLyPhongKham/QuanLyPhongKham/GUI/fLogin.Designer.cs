@@ -44,7 +44,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::QuanLyPhongKham.Properties.Resources.lock_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 88);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(132, 139);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -58,16 +58,16 @@
             this.panel1.Controls.Add(this.txbPassWord);
             this.panel1.Controls.Add(this.txbUserName);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(184, 88);
+            this.panel1.Location = new System.Drawing.Point(184, 63);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 159);
+            this.panel1.Size = new System.Drawing.Size(270, 163);
             this.panel1.TabIndex = 1;
             // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.White;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(161, 126);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(163, 130);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(104, 30);
             this.btnLogin.TabIndex = 3;
@@ -112,7 +112,7 @@
             this.txbPassWord.SelectionLength = 0;
             this.txbPassWord.SelectionStart = 0;
             this.txbPassWord.ShortcutsEnabled = true;
-            this.txbPassWord.Size = new System.Drawing.Size(265, 25);
+            this.txbPassWord.Size = new System.Drawing.Size(267, 25);
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.UseSelectable = true;
             this.txbPassWord.UseSystemPasswordChar = true;
@@ -147,7 +147,7 @@
             this.txbUserName.SelectionLength = 0;
             this.txbUserName.SelectionStart = 0;
             this.txbUserName.ShortcutsEnabled = true;
-            this.txbUserName.Size = new System.Drawing.Size(265, 25);
+            this.txbUserName.Size = new System.Drawing.Size(267, 25);
             this.txbUserName.TabIndex = 0;
             this.txbUserName.UseSelectable = true;
             this.txbUserName.WaterMark = "Tên đăng nhập";
@@ -163,7 +163,7 @@
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 290);
+            this.ClientSize = new System.Drawing.Size(480, 249);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "fLogin";

@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace QuanLyPhongKham.GUI
 {
-    public partial class fTiepNhanBenhNhan : Form
+    public partial class fKhamBenh : Form
     {
-        public fTiepNhanBenhNhan()
+        public fKhamBenh()
         {
             InitializeComponent();
-        }
-
-        private void fTiepNhanBenhNhan_Load(object sender, EventArgs e)
-        {
-            cboGioiTinh.SelectedIndex = 0;
-            
         }
     }
 }

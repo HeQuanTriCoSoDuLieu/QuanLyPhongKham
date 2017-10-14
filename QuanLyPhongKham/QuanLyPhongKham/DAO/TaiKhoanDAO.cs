@@ -10,19 +10,23 @@ namespace QuanLyPhongKham.DAO
     {
         #region Singletone
 
-        private static TaiKhoanDAO instane;
+        private static TaiKhoanDAO instance;
 
         public static TaiKhoanDAO Instane
         {
             get
             {
-                if (instane==null)
+                if (instance == null)
                 {
-                    instane = new TaiKhoanDAO();
+                    instance = new TaiKhoanDAO();
                 }
-                return instane;
+                return instance;
             }
-            private set => instane = value;
+            private set
+            {
+                instance = value;
+            }
+
         }
 
         private TaiKhoanDAO() { }

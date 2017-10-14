@@ -10,19 +10,22 @@ namespace QuanLyPhongKham.BUS
     {
         #region Singletone
 
-        private static TaiKhoanBUS instane;
+        private static TaiKhoanBUS instance;
 
         public static TaiKhoanBUS Instane
         {
             get
             {
-                if (instane == null)
+                if (instance == null)
                 {
-                    instane = new TaiKhoanBUS();
+                    instance = new TaiKhoanBUS();
                 }
-                return instane;
+                return instance;
             }
-            private set => instane = value;
+            private set
+            {
+                instance = value;
+            }
         }
         private TaiKhoanBUS() { }
 
@@ -31,7 +34,7 @@ namespace QuanLyPhongKham.BUS
 
         public bool Login(string username, string password)
         {
-            return TaiKhoanDAO.Instane.Login(username,password);
+            return TaiKhoanDAO.Instane.Login(username, password);
         }
 
     }

@@ -12,7 +12,7 @@ namespace QuanLyPhongKham.DAO
     {
         #region Singletone Parttern
 
-        private static DataProvider instane;
+        private static DataProvider instance;
 
         /// <summary>
         /// kiểm tra xem đã tạo đối tượng DataProvider nào trước đó hay chưa.
@@ -22,15 +22,18 @@ namespace QuanLyPhongKham.DAO
         {
             get
             {
-                if (instane == null)
+                if (instance == null)
                 {
-                    instane = new DataProvider();
+                    instance = new DataProvider();
                 }
-                return instane;
+                return instance;
             }
 
-            private set => instane = value;
-            
+            private set
+            {
+                instance = value;
+            }
+
         }
 
 
@@ -123,14 +126,14 @@ namespace QuanLyPhongKham.DAO
         /// <param name="query">Câu lệnh sql</param>
         /// <param name="values">Mảng giá trị cho tham số truyền vào  câu lệnh sql</param>
         /// <returns></returns>
-        public int ExecuteNonQuery(string query, object[] values=null)
+        public int ExecuteNonQuery(string query, object[] values = null)
         {
             int row = 0;
-            using (connection= new SqlConnection(connectionString))
+            using (connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 sqlCommand = new SqlCommand(query, connection);
-                
+
                 if (values != null)
                 {
                     string[] listPara = query.Split(' ');
@@ -147,7 +150,7 @@ namespace QuanLyPhongKham.DAO
                 row = sqlCommand.ExecuteNonQuery();
                 connection.Close();
             }
-            
+
             return row;
         }
 
@@ -159,8 +162,8 @@ namespace QuanLyPhongKham.DAO
             using (connection = new SqlConnection(connectionString))
             {
                 connection.Open();
-                sqlCommand = new SqlCommand(query,connection);
-                if (values!=null)
+                sqlCommand = new SqlCommand(query, connection);
+                if (values != null)
                 {
                     string[] listPara = query.Split(' ');
                     int i = 0;
@@ -168,7 +171,7 @@ namespace QuanLyPhongKham.DAO
                     {
                         if (item.Contains('@'))
                         {
-                            sqlCommand.Parameters.AddWithValue(item,values[i++]);
+                            sqlCommand.Parameters.AddWithValue(item, values[i++]);
                         }
                     }
                 }
